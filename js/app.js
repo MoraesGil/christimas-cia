@@ -1,13 +1,16 @@
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 2) {
+  if ($(this).scrollTop() > 2) {
     $('.navbar-natal').addClass("solid");
-    $('.brand').css('display','block');
-    $('.navbar-brand').fadeOut();
-    $('.brand').css('display','block');
-    $('.brand').css('positon','unset');
 
-} else {
-  $('.navbar-natal').removeClass("solid");
-   $('.brand').css('display','none');
-    $('.navbar-brand').css('display','block');
-} });
+
+  } else {
+    $('.navbar-natal').removeClass("solid");
+
+  }
+
+  $(this).scrollTop() >= 1 ? $(".logo-brand").addClass("active") : $(".logo-brand").removeClass("active")
+});
+
+$(window).ready(function(){
+ $('#u_0_2').addClass(".facebuttons");
+})

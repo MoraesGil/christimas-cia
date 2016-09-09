@@ -126,25 +126,7 @@ body, html {
   background-color: rgba(242, 242, 242, 0.7);
   border-color: transparent;
 }
-.navbar-natal .navbar-brand {
-  color: #9d9d9d;
-}
-.navbar-brand img {
-  width: 130px;
-  margin-top: -15px;
-  padding: 0 !important;
-}
-.brand {
-  position: absolute;
-  display: none;
-}
-.brand img {
-  width: 130px;
-  height: 70px;
-  margin-top: 0px;
-  padding: 0px !important;
 
-}
 .navbar-natal .navbar-brand:hover,
 .navbar-natal .navbar-brand:focus {
   color: #8e2f39;
@@ -222,7 +204,7 @@ body, html {
 }
 .empresa p{
   font-family: 'textoFonte', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: #454545;
   text-align: justify;
 }
@@ -339,7 +321,7 @@ body, html {
 }
 .moldura {
   margin: 150px 0px 0px 20%;
-  width: 220px;
+  width: 245px;
   height: 140px;
   border: 8px solid #8e2f39;
   box-sizing: border-box
@@ -387,7 +369,6 @@ body, html {
   float: left;
 }
 .papai_noel img {
-  width: 470px;
   height: 470px;
 }
 .box-branco {
@@ -558,4 +539,49 @@ input[type="search"] {
 .footer a:hover {
   color: #8e2f39;
   text-decoration: underline;
+}
+
+/*LOGO
+-----------------------------------------------------------------*/
+.logo-brand {
+  position: absolute;
+  top: -10px;
+  left: 60px;
+  width: 103px;
+  height: 55px;
+  background: #fff;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 10;
+  transition: all .3s;
+}
+.logo-brand.active:before {
+
+  height: 78px;
+  top: 0px;
+  background: url(../img/logo2.png) center center no-repeat;
+}
+
+.logo-brand:before {
+  display: block;
+  content: "";
+  width: 140px;
+  height: 127px;
+  transition: all .3s;
+  background: url(../img/logo.png) center center no-repeat;
+}
+.logo-brand.active {
+  height: 57px;
+}
+
+.brand{
+  margin-right: 50%;
+}
+
+/*facebook like button id=#u_0_2*/
+._2tga {
+    background: #fbfbfb !important;
+    border: 1px solid #ffffff !important;
+    color:#8e2f39 !important;
 }
