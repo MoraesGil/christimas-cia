@@ -8,13 +8,22 @@ function changeMenu(){
   } else {
     $('.navbar-natal').removeClass("solid");
   }
-
   $(this).scrollTop() >= 1 ? $(".logo-brand").addClass("active") : $(".logo-brand").removeClass("active")
 
 }
 
 $(window).ready(function(){
   changeMenu();
+
+  $("#btn_empresa_mais").click(function(){
+    window.location = "/empresa.html"
+  });
+  $("#btn_clientes_mais").click(function(){
+    window.location = "/clientes.html"
+  });
+  $("#btn_portifolio_mais").click(function(){
+    window.location = "/portifolio.html"
+  });
 
   $('.venobox').venobox();
 

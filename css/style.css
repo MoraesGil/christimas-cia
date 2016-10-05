@@ -37,7 +37,7 @@ body, html {
 /*BOTÃO
 ------------------------------------------------------*/
 .button {
-  display: inline-block;
+  /*display: inline-block;*/
   padding: 10px 40px;
   margin-bottom: 0;
   font-family:'textoFonte', sans-serif;
@@ -69,6 +69,10 @@ body, html {
   -ms-transition: all 0.25s ease-out;
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
+}
+.invert-black{
+  border: 1px solid #000 !important;
+  color: #232323 !important;
 }
 .invert:hover {
   background-color: #fff;
@@ -163,6 +167,7 @@ body, html {
   color: #6d2129;
   background-color: transparent;
   height: 70px;
+  border-bottom: 1px solid #6d2129;
 }
 .navbar-natal .navbar-nav > .disabled > a,
 .navbar-natal .navbar-nav > .disabled > a:hover,
@@ -201,6 +206,9 @@ body, html {
 .empresa {
   background-color: #fff;
   min-height: 340px;
+  margin-top: 5%;
+    margin-bottom: 5%;
+
 }
 
 #empresa .empresa{
@@ -339,37 +347,35 @@ body, html {
 /*PORTFOLIO
 ------------------------------------------------------------------*/
 .portfolio {
-  position: relative;
-  width: 100%;
-  /*height: 580px;*/
   background: #fff;
-  z-index: 0;
-}
-.moldura {
-  margin: 150px 0px 0px 20%;
-  width: 245px;
-  height: 140px;
-  border: 8px solid #8e2f39;
-  box-sizing: border-box
-}
-.moldura img {
-  margin-left: 4px;
-  margin-top: 10px;
-  width: 220px;
-  height: 155px;
 }
 
-.portfolio h2 {
+#portifolio{
+  padding-top: 5%;
+  padding-bottom:5%;
+}
+
+.moldura {
+  width: 320px;
+  height: 280px;
+  border: 8px solid #8e2f39;
+}
+.moldura img {
+  margin-left: 4%;
+  margin-top: 4%;
+  height: 280px;
+  width: 280px;
+}
+
+#portifolio h2 {
   font-family: 'tituloFonte', sans-serif;
   font-size: 18px;
   color: #6f7074;
   text-align: center;
   padding-top: 50px;
 }
-.portfolio button {
+.button a {
   margin-top: 20px;
-  margin: 30px auto;
-  display: block;
   font-family: 'textoFonte';
   font-size: 10px;
   line-height: 1.6;
@@ -487,6 +493,10 @@ body, html {
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-controller .black {
+  color:rgb(138, 135, 135);
+  border: 2px solid rgb(138, 135, 135);
 }
 .form-controller:focus {
   border-color: rgba(255,255,255,1);
@@ -620,11 +630,6 @@ input[type="search"] {
   }
 
 }
-
-#estrela{
-  color: #8e2f39;
-}
-
 
 /*PORTFOLIO PAGE
 ------------------------------------------------------------------*/
@@ -818,20 +823,25 @@ a.portfolio-item-zoom:hover {
 /*MOLDURAS PORTIFOLIO*/
 .port-moldura-size1{
   height: 400px;
+  width: 280px;
+}
+
+.port-moldura-size1-big{
+  height: 450px;
   width: 300px;
 }
 
 .port-moldura-size2{
-  height: 300px;
-  width: 400px;
+  height: 200px;
+  width: 300px;
 }
 
 .port-moldura {
-  margin: 20px;
   border: 8px solid #8e2f39;
   box-sizing: border-box;
   padding-top: 10px;
   padding-right: 40px;
+  margin-top: 10%
 
 }
 
@@ -860,6 +870,63 @@ a.portfolio-item-zoom:hover {
   opacity: 1
 }
 
-.port-moldura-crop img{
+#quadros{
+  margin-top: 5%;
+  margin-bottom:  5%;
+}
+#quadros .row{
+  margin-rigt: 10%;
+  margin-left: 10%;
+}
+
+.portifa{
+  margin-bottom: 5%;
+margin-top: 5%;
+}
+
+.portifa-text h3 {
+  font-family: 'tituloFonte', sans-serif;
+  color: #6d6e70;
+  text-transform: uppercase;
+  text-align: center;
+}
+.portifa-text p{
+  font-family: 'textoFonte', sans-serif;
+  font-size: 16px;
+  color: #6d6e70;
+  text-align: justify;
+}
+.portifa-span {
+  font-family: 'textoFonte', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #8e2f39;
+  text-align: justify;
+}
+
+#navbar > ul{
+  margin-left: 12%!important;
+}
+@media (max-width: 768px){
+  #navbar > ul{
+    margin-left: 5%!important;
+    margin-top: 0px!important;
+  }
+}
+@media (min-width: 1440px){
+  #navbar > ul{
+    margin-left: 15%!important;
+    margin-top: 0px!important;
+  }
+}
+#sec_trabalhe{
+  margin-bottom: 2%;
+}
+.form-control {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.banner_fixo{
 
 }
