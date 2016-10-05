@@ -1,16 +1,38 @@
 $(window).scroll(function() {
+  changeMenu();
+});
+
+function changeMenu(){
   if ($(this).scrollTop() > 2) {
     $('.navbar-natal').addClass("solid");
-
-
   } else {
     $('.navbar-natal').removeClass("solid");
-
   }
 
   $(this).scrollTop() >= 1 ? $(".logo-brand").addClass("active") : $(".logo-brand").removeClass("active")
-});
+
+}
 
 $(window).ready(function(){
- $('#u_0_2').addClass(".facebuttons");
-})
+  changeMenu();
+
+  $('.venobox').venobox();
+
+ // testimonial-item
+ // $(".testimonial-item").owlCarousel({
+ //   autoPlay: true,
+ //   slideSpeed: 2000,
+ //   pagination: false,
+ //   navigation: true,
+ //   items: 1,
+ //   /* transitionStyle : "fade", */
+ //   /* [This code for animation ] */
+ //   navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+ //   transitionStyle : "backSlide",
+ //   itemsDesktop: [1199, 1],
+ //   itemsDesktopSmall: [980, 1],
+ //   itemsTablet: [768, 1],
+ //   itemsMobile: [479, 1],
+ // });
+
+});

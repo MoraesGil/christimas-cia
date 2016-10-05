@@ -15,6 +15,8 @@ body, html {
   font-family: tituloFonte;
   src: url(../fonts/Montserrat-Regular.ttf);
 }
+
+
 /*SCROLL BAR
 ----------------------------------------------------*/
 ::-webkit-scrollbar {
@@ -94,6 +96,13 @@ body, html {
 .navbar {
   max-height: 70px !important;
 }
+
+.navbar-nav{
+  padding-left: 3%;
+
+}
+
+
 .navbar-nav > li {
   padding-left: 30px !important;
   padding-top: 10px;
@@ -169,7 +178,7 @@ body, html {
   background-color: #333;
 }
 .navbar-natal .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: #a88e5b;
 }
 .navbar-natal .navbar-collapse,
 .navbar-natal .navbar-form {
@@ -190,27 +199,28 @@ body, html {
 /*EMPRESA
 ------------------------------------------------------*/
 .empresa {
-  position: relative;
-  width: 100%;
-  height: 500px;
   background-color: #fff;
+  min-height: 340px;
+}
+
+#empresa .empresa{
+  min-height: 390px;
 }
 .empresa h2 {
   font-family: 'tituloFonte', sans-serif;
   font-size: 24px;
-  color: #454545;
+  color: #6d6e70;
   text-transform: uppercase;
   text-align: center;
 }
 .empresa p{
   font-family: 'textoFonte', sans-serif;
   font-size: 16px;
-  color: #454545;
+  color: #6d6e70;
   text-align: justify;
 }
 .empresa button {
   margin-top: 20px;
-  margin-left: 30%;
   font-family: 'textoFonte';
   font-size: 10px;
   line-height: 1.6;
@@ -230,13 +240,29 @@ body, html {
   height: 300px;
   border: 8px solid #8e2f39;
   box-sizing: border-box;
-  margin: 0 auto;
-  float: right;
+  /*margin: 0 auto;*/
+  margin-left: 7%;
+  /*float: right;*/
 }
 .foto img {
   margin-left: -25px;
   margin-top: -25px;
 }
+
+.quadro {
+  width: 300px;
+  height: 300px;
+  border: 8px solid #8e2f39;
+  box-sizing: border-box;
+  /*margin: 0 auto;*/
+  margin-left: 7%;
+  /*float: right;*/
+}
+.quadro img {
+  margin-left: -25px;
+  margin-top: -25px;
+}
+
 /*CLIENTES
 --------------------------------------------------------------*/
 .clientes {
@@ -315,7 +341,7 @@ body, html {
 .portfolio {
   position: relative;
   width: 100%;
-  height: 580px;
+  /*height: 580px;*/
   background: #fff;
   z-index: 0;
 }
@@ -332,6 +358,7 @@ body, html {
   width: 220px;
   height: 155px;
 }
+
 .portfolio h2 {
   font-family: 'tituloFonte', sans-serif;
   font-size: 18px;
@@ -526,7 +553,7 @@ input[type="search"] {
   color: #8e2f39;
   font-size: 32px !important;
   text-align: right;
-  margin-left: 240px;
+  /*margin-left: 240px;*/
 }
 .footer a {
   color: #8e2f39;
@@ -581,7 +608,258 @@ input[type="search"] {
 
 /*facebook like button id=#u_0_2*/
 ._2tga {
-    background: #fbfbfb !important;
-    border: 1px solid #ffffff !important;
-    color:#8e2f39 !important;
+  background: #fbfbfb !important;
+  border: 1px solid #ffffff !important;
+  color:#8e2f39 !important;
+}
+
+@media (min-width: 768px)
+{
+  .navbar-nav {
+
+  }
+
+}
+
+#estrela{
+  color: #8e2f39;
+}
+
+
+/*PORTFOLIO PAGE
+------------------------------------------------------------------*/
+
+.section-heading{
+  min-height: 400px;
+  padding-top: 5%;
+}
+
+.portfolio-area .section-heading h3 {
+  color: #1f1f1f;
+  font-size: 38px;
+  line-height: 38px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+
+}
+.portfolio-area .section-heading p {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+}
+.portfolio-area {
+  padding: 80px 0 0;
+}
+.portfolio-nav {
+  margin: 0 0 20px;
+}
+.portfolio-nav li {
+  border: 1px solid #ddd;
+  cursor: pointer;
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 0 10px;
+  padding: 4px 12px;
+}
+.portfolio-nav li:hover, .portfolio-nav li.active {
+  background: #00cccc none repeat scroll 0 0;
+  border-color: #00cccc;
+  color: #fff;
+}
+.portfolio-masonry-item {
+  overflow: hidden;
+  position: relative;
+  padding: inherit;
+}
+.portfolio-overley {
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.portfolio-overley img {
+  opacity: 0;
+  position: relative;
+}
+a:hover, a:focus {
+  color: #00cccc;
+  text-decoration: none;
+}
+.portfolio-masonry-item:hover .portfolio-overley {
+  opacity: 1
+}
+.portfolio-item-zoom {
+  display: block;
+  font-size: 50px;
+  color: #00cccc;
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  line-height: 66px;
+  text-align: center;
+  /*border: 2px solid #fff;*/
+  margin: -36px 0 0 -36px;
+  position: absolute;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.portfolio-overley:hover .portfolio-item-zoom {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+a.portfolio-item-zoom:hover {
+  color: #fff;
+}
+.content {
+  bottom: 20px;
+  color: #fff;
+  left: -100%;
+  position: absolute;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.portfolio-masonry-item:hover .content {
+  left: 30px;
+}
+.content a {
+  color: #a94442;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.content:hover a {
+  color: #fff;
+}
+
+
+
+
+/*area de testeminhos em portifolio*/
+.boxed{
+  border: 2px solid #fff;
+  border-radius: 0;
+  padding: 1%;
+  margin-top: 8%;
+}
+.testimonials-area {
+  background-image: url(../img/bg_testemunhos.jpg);
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 80px 0;
+
+}
+.testimonial-details {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.test-img> img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.test-img {
+  margin-bottom: 10px;
+}
+.testimonials-area .section-heading> h3 {
+  font-size: 38px;
+  line-height: 38px;
+  margin-bottom: 15px;
+  margin-top: 10%;
+  text-transform: uppercase;
+}
+.testimonials-area .section-heading> p {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.testimonial-details> p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  background: transparent none repeat scroll 0 0;
+  /*border: 2px solid #fff;*/
+  border-radius: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 28px;
+  height: 40px;
+  width: 40px;
+  line-height: 33px;
+  margin: 5px 3px 0;
+  opacity: 1;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.owl-theme .owl-controls .owl-buttons div:hover {
+  background: #00cccc none repeat scroll 0 0;
+  border: 2px solid #00cccc;
+}
+
+/*MOLDURAS PORTIFOLIO*/
+.port-moldura-size1{
+  height: 400px;
+  width: 300px;
+}
+
+.port-moldura-size2{
+  height: 300px;
+  width: 400px;
+}
+
+.port-moldura {
+  margin: 20px;
+  border: 8px solid #8e2f39;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-right: 40px;
+
+}
+
+.port-moldura-crop{
+  /*border: 2px solid blue;*/
+  margin-left: -25px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.crop-overley{
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.port-moldura-crop:hover .crop-overley {
+  opacity: 1
+}
+
+.port-moldura-crop img{
+
 }
