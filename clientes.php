@@ -1,75 +1,22 @@
-<!DOCTYPE html>
-<html lang="">
-<head>
-  <meta charset="UTF-8">
-  <title>CIA do Natal</title>
-  <meta name="Author" content=""/>
-
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/carousel.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title">
-
-  <!-- owl.carousel css -->
-  <link rel="stylesheet" href="css/owl.carousel.css">
-  <!--animate css-->
-  <link rel="stylesheet" href="css/animate.css">
-  <!--venobox css-->
-  <link rel="stylesheet" href="css/venobox.css">
-
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--JAVASCRIPT-->
-  <script src="js/modernizr.js" type="text/javascript"></script>
-  <!-- FONTES -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i" rel="stylesheet">
-</head>
-<body>
-  <!--MENU-->
-  <div class="navbar-wrapper">
-    <div class="container">
-      <nav class="navbar navbar-natal navbar-static-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="logo-brand" href="#">
-            </a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav text-center">
-              <li ><a href="index.html">Home</a></li>
-              <li><a href="empresa.html">Empresa</a></li>
-              <li><a href="portifolio.html">Portfólio</a></li>
-              <li><a href="projetos.html">Projetos</a></li>
-              <li class="active"><a href="clientes.html">Clientes</a></li>
-              <li><a href="contato.html">Contato</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div>
-
-  <div class="banner_fixo">
+<?php include_once "header.php"; ?>
+  <section class="banner_fixo center-block">
    <img class="img-responsive" src="img/banner_fixo.jpg" alt="">
-  </div>
+  </section>
 
-  <section id="clientes_detail" class="empresa" >
+  <section id="clientes_detail" >
     <div class="container">
-      <div class="row text-center">
-        <h1>Confira aqui, quem são os nossos clientes.</h1>
-        <br>
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-center">Confira aqui quem são os nossos clientes.</h3>
+        </div>
 
-        <h5>Empresas que vem durante estes 20 anos, nos privilegiando com sua confiança e parceria.</h5>
-        <h5>Queremos que você, também faça parte do rol de nossos clientes.</h5>
+        <div class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+          <p style="line-height:1em;font-family: 'tituloFonte', sans-serif;">
+            Empresas que vem durante estes 20 anos, nos privilegiando com sua confiança e parceria. <br>
+            Queremos que você, também faça parte do rol de nossos clientes.
+          </p>
+        </div>
+
       </div>
       <br>
       <br>
@@ -177,15 +124,14 @@
 
           <p>
             <b>SC</b><br/>
-            Criciúma Shopping –C <br/>
-            riciúma/SC <br/>
+            Criciúma Shopping – Criciúma/SC <br/>
             Farol Shopping – Tuburão/SC <br/>
             Shopping Zipperer – São Bento do Sul/SC <br/>
           </p>
         </div>
         <div class="col-md-6 col-sm-12 col-xs-12">
           <p>
-            <b>SP</b>
+            <b>SP</b> <br>
             Assis Plaza Shopping – Assis/SP <br>
             Bauru Shopping Center – Bauru/SP <br>
             Boqueirão Praia Shopping – Praia Grande/SP <br>
@@ -266,86 +212,4 @@
     </div>
   </section>
 
-  <div class="clearfix"></div>
-  <section id="contato">
-    <div class="mapa" data-parallax="scroll" data-bleed="10" data-image-src="img/banner_mapa.jpg" data-natural-width="1920" data-natural-height="920">
-      <div class="container">
-        <h2>Contato</h2>
-        <div class="separador_branco"></div>
-        <br/>
-        <div class="row">
-          <div class="col-md-6">
-            <form>
-              <div class="form-group">
-                <input type="email" class="form-controller" name="nome" placeholder="Nome">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-controller" name="email" placeholder="E-mail">
-              </div>
-
-              <div class="form-group">
-                <textarea rows="5" placeholder="Mensagem" id="" class="form-controller"></textarea>
-              </div>
-              <input type="submit" value="Enviar" name="envia" class="button invert">
-            </form>
-          </div>
-          <div class="col-md-6">
-            <a href=""><img src="img/icone_RH.png" alt="" style="height: 117px;  width: 200px;"></a>
-            <a href=""><img src="img/icone_comercial.png" alt="" style="height: 117px;  width: 200px;"></a>
-            <div class="clearfix"></div>
-            <br/>
-            <p>AV. Juscelino Kubitchek, 2908</p>
-            <p>Presidente Prudente - SP, CEP: 19065-300</p>
-            <h3>18 3907 6711</h3>
-            <br>
-            <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.agenciaativa.com.br%2Fcliente%2Fciadonatal%2Fsite%2F&width=200px&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="200px" height="46" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer">
-      <div class="col-md-12 text-center">
-        <p>Todos direitos reservados - Copyright 2016</p>
-      </div>
-    </div>
-  </footer>
-
-  <!--JAVASCRIPT-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
-  <script src="js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="js/venobox.min.js"></script>
-
-  <!-- owl.carousel js -->
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/parallax.js" type="text/javascript"></script>
-  <script src="js/wow.js" type="text/javascript"></script>
-  <script src="js/app.js" type="text/javascript"></script>
-
-  <!--venobox js-->
-
-
-  <script type="text/javascript">
-  $(document).ready(function() {
-
-    //WOW SCRIPT
-    wow = new WOW ({
-      boxClass: 'wow',
-      animateClass: 'animated',
-      offset: 0,
-      mobile: true,
-      live: true
-    })
-    new WOW().init();
-
-
-  });
-  </script>
-
-
-</body>
-
-
-</html>
+<?php include_once "footer.php"; ?>
