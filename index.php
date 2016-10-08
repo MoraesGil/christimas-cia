@@ -118,6 +118,8 @@
       <div class="col-md-6 hidden-xs hidden-sm">
         <div id="slide_noel" class="owl-carousel">
           <div><img  src="img/papai_noel.png" alt=""></div>
+          <div><img  src="img/papai_noel.png" alt=""></div>
+          <div><img  src="img/papai_noel.png" alt=""></div>
         </div>
       </div>
       <div class="col-md-6">

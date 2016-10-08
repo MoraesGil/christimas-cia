@@ -37,83 +37,83 @@
 
 <section id="portfolio">
 
-
   <?php foreach (range(1,16) as $index): ?>
-    <div class="portfolio-masonry-item box">
-      <div class="innerContent">
-        <img  src=<?php echo "img/portifolio/mini/img".$index.".jpg"; ?> alt="">        
+
+        <div class="portfolio-masonry-item box <?php echo $index>4 ? "hidden-xs":"" ?> <?php echo $index>4 ? "hidden-xs":"" ?>">
+        <div class="innerContent">
+          <img  src=<?php echo "img/portifolio/mini/img".$index.".jpg"; ?> alt="">
+        </div>
+        <div class="portfolio-overley venobox " data-gall="galeria" href=<?php echo "img/portifolio/img".$index.".jpg"; ?>>
+          <a class="portfolio-item-zoom" >
+            <i class="fa fa-search"></i>
+            <div class="content">
+              <h4><a href="">Titulo</a></h4>
+              <span>subtitulo</span>
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="portfolio-overley venobox " data-gall="galeria" href=<?php echo "img/portifolio/img".$index.".jpg"; ?>>
-        <a class="portfolio-item-zoom" >
-          <i class="fa fa-search"></i>
-          <div class="content">
-            <h4><a href="">Titulo</a></h4>
-            <span>subtitulo</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  <?php endforeach; ?>
+    <?php endforeach; ?>
 
-</section>
+  </section>
 
-<section id="experiencias">
-  <div class="testimonials-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3 col-xs-12">
-          <div class="section-heading ">
-            <h4>EXPERIÊNCIAS INTERATIVAS</h4>
-            <div class="separador" style="background: #ffffff;"></div>
-            <br>
-            <p>
-              Animatrônicos de última geração, aromatização de ambiente, sonorização, iluminação cênica, sensação térmica em cenários ricos em detalhes.
-            </p>
+  <section id="experiencias">
+    <div class="testimonials-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+            <div class="section-heading ">
+              <h4>EXPERIÊNCIAS INTERATIVAS</h4>
+              <div class="separador" style="background: #ffffff;"></div>
+              <br>
+              <p>
+                Animatrônicos de última geração, aromatização de ambiente, sonorização, iluminação cênica, sensação térmica em cenários ricos em detalhes.
+              </p>
 
-            <div class="boxed">
-              Enriqueça seus projetos com trenzinhos, roda gigante,
-              carrosSel, playground, labirinto, oficinas e muito mais
+              <div class="boxed">
+                Enriqueça seus projetos com trenzinhos, roda gigante,
+                carrosSel, playground, labirinto, oficinas e muito mais
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="quadros">
-  <div class="container ">
-    <div class="row">
-      <div class="col-md-6 col-sm-6">
-        <div class="port-moldura port-moldura-size1 ">
-          <div class="port-moldura-crop port-moldura-size1">
-            <img class="img-responsive" src="img/quadros/1.jpg" alt="">
+  <section id="quadros">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="port-moldura port-moldura-size1 ">
+            <div class="port-moldura-crop port-moldura-size1">
+              <img class="img-responsive" src="img/quadros/1.jpg" alt="">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-sm-6">
-        <div class="port-moldura port-moldura-size1-big">
-          <div class="port-moldura-crop port-moldura-size1-big">
-            <img class="img-responsive" src="img/quadros/2.jpg" alt="">
+        <div class="col-md-6 col-sm-6">
+          <div class="port-moldura port-moldura-size1-big">
+            <div class="port-moldura-crop port-moldura-size1-big">
+              <img class="img-responsive" src="img/quadros/2.jpg" alt="">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-sm-6">
-        <div class="port-moldura port-moldura-size1">
-          <div class="port-moldura-crop port-moldura-size1">
-            <img class="img-responsive" src="img/quadros/2.jpg" alt="">
+        <div class="col-md-6 col-sm-6">
+          <div class="port-moldura port-moldura-size1">
+            <div class="port-moldura-crop port-moldura-size1">
+              <img class="img-responsive" src="img/quadros/2.jpg" alt="">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-sm-6">
-        <div class="port-moldura port-moldura-size2 " style="margin-top:10%">
-          <div class="port-moldura-crop port-moldura-size2">
-            <img class="img-responsive" src="img/quadros/4.jpg" alt="">
+        <div class="col-md-6 col-sm-6">
+          <div class="port-moldura port-moldura-size2 " style="margin-top:10%">
+            <div class="port-moldura-crop port-moldura-size2">
+              <img class="img-responsive" src="img/quadros/4.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<?php include_once "footer.php"; ?>
+  <?php include_once "footer.php"; ?>

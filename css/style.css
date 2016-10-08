@@ -1029,8 +1029,8 @@ input[type="file"] {
 @media only screen and (max-width : 480px) {
   /* Smartphone view: 1 tile */
   .box {
-    width: 100%;
-    padding-bottom: 100%;
+    width: 50%;
+    padding-bottom: 50%;
   }
 }
 @media only screen and (max-width : 650px) and (min-width : 481px) {
@@ -1043,8 +1043,8 @@ input[type="file"] {
 @media only screen and (max-width : 1050px) and (min-width : 651px) {
   /* Small desktop / ipad view: 3 tiles */
   .box {
-    width: 33.3%;
-    padding-bottom: 33.3%;
+    width: 25%;
+    padding-bottom: 25%;
   }
 }
 @media only screen and (max-width : 1290px) and (min-width : 1051px) {
