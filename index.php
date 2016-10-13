@@ -14,7 +14,7 @@
         <div class="col-md-6 col-sm-6 col-xs-12">
           <h2>A companhia do natal</h2>
           <div class="separador"></div>
-          <br/>
+          <br/><br>
           <p>Especializada em decorações natalinas, a Companhia do Natal, completa 20 anos mantendo sério compromisso com a qualidade, respeito aos clientes e fornecedores, o que lhe garante altos índices de fidelidade.</p>
 
           <p>Através de pesquisas no mercado nacional, internacional e grandes feiras, busca constante atualização de produtos e novas tecnologias, proporcionando a seus clientes decorações diferenciadas, personalizadas, unindo criatividade a beleza com melhor custo/benefício.</p>
@@ -113,28 +113,41 @@
 </section>
 
 <section class="banner_bot">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 hidden-xs hidden-sm">
-        <div id="slide_noel" class="owl-carousel">
-          <div><img  src="img/papai_noel.png" alt=""></div>
-          <div><img  src="img/papai_noel.png" alt=""></div>
-          <div><img  src="img/papai_noel.png" alt=""></div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="box-branco">
-          <h2>COMENTÁRIOS DOS CLIENTES</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-          </p>
+  <div id="comentarios-carousel" class="owl-carousel  ">
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 hidden-sm hidden-xs">
+          <img src="img/comentarios/1.png" alt="" />
+        </div>
+        <div class="col-md-6">
+          <div class="box-branco">
+            <h2>BANNER 1  </h2>
+            <p>
+              exemplo 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 hidden-sm hidden-xs">
+          <img src="img/comentarios/2.png" alt="" />
+        </div>
+        <div class="col-md-6">
+          <div class="box-branco">
+            <h2>BANNER 2  </h2>
+            <p>
+              exemplo 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </section>
 

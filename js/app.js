@@ -16,26 +16,27 @@ $(window).ready(function(){
   changeMenu();
 
   $("#banner-home").owlCarousel({
-    autoPlay: 3000, //Set AutoPlay to 3 seconds
-    items : 1,
-    itemsDesktop : [1199,1],
-    itemsDesktopSmall : [979,1],
-    itemsTablet	:[768,1],
-    itemsMobile	:[479,1],
-    lazyLoad : true,
+    loop:true,
+    autoplay:true,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    items:1,
+    nav: true,
+    navText: false
+  });
+
+  $("#comentarios-carousel").owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    items:1,
+    animateOut: 'fadeOut',
+    smartSpeed:3000,
   });
 
 
-  $("#slide_noel").owlCarousel({
-    autoPlay : 2000,
-    stopOnHover : true,
-    paginationSpeed : 1000,
-    goToFirstSpeed : 2000,
-    singleItem : true,
-    autoHeight : true,
-    loop:true
-    // transitionStyle:"fade"
-  });
+
 
   $("#btn_empresa_mais").click(function(){
     window.location = "/empresa.html"
@@ -48,7 +49,7 @@ $(window).ready(function(){
   });
 
   $('.venobox').venobox({
-    numeratio: true,            
+    numeratio: true,
     infinigall: true
   });
 

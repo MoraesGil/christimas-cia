@@ -1,6 +1,6 @@
 <?php
 $pages = array();
-$pages["home.php"] = "Home";
+$pages["index.php"] = "Home";
 $pages["empresa.php"] = "Empresa";
 $pages["portifolio.php"] = "Portfólio";
 $pages["projetos.php"] = "Projetos";

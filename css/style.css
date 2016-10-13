@@ -227,6 +227,7 @@ h1,h2,h3,h4,h5{
   margin-top: 5%;
   padding-bottom: 5%
 }
+
 #clientes_detail > div{
   margin-top: 2%;
   margin-bottom: 2%;
@@ -235,14 +236,14 @@ h1,h2,h3,h4,h5{
 
 .empresa h2 {
   font-family: 'tituloFonte', sans-serif;
-  font-size: 1em;
+  font-size: 2em;
   color: #6d6e70;
   text-transform: uppercase;
   text-align: center;
 }
 .empresa p{
   font-family: 'textoFonte', sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   color: #6d6e70;
   text-align: justify;
 }
@@ -299,7 +300,6 @@ h1,h2,h3,h4,h5{
 .clientes h2 {
   margin-top: 180px;
   font-family: 'tituloFonte', sans-serif;
-  font-size: 1em;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -312,7 +312,7 @@ h1,h2,h3,h4,h5{
 }
 .clientes p{
   font-family: 'textoFonte', sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   color: #fff;
   text-align: center;
   max-width: 700px;
@@ -341,9 +341,6 @@ h1,h2,h3,h4,h5{
   padding-top: 3%;
   padding-bottom: 3%;
 }
-.projetos p{
-
-}
 .box-texto{
   /*width: 90%;*/
   min-height: 400px;
@@ -354,7 +351,7 @@ h1,h2,h3,h4,h5{
 }
 .box-texto h2 {
   font-family: 'tituloFonte', sans-serif;
-  font-size: 1em;
+  font-size: 2em;
   color: #6f7074;
   text-transform: uppercase;
   text-align: center;
@@ -374,7 +371,7 @@ h1,h2,h3,h4,h5{
 
 #portifolio{
   padding-top: 5%;
-  padding-bottom:5%;
+  /*padding-bottom:5%;*/
 }
 
 .moldura {
@@ -392,7 +389,7 @@ h1,h2,h3,h4,h5{
 
 #portifolio h2 {
   font-family: 'tituloFonte', sans-serif;
-  font-size: 0.750em;
+  font-size: 1.5em;
   color: #6f7074;
   text-align: center;
 }
@@ -415,17 +412,28 @@ h1,h2,h3,h4,h5{
   background-image: url('../img/banner_bot.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+}
+
+.banner_bot   {
+  height: 400px;
+}
+
+#comentarios-carousel .owl-controls{
+  display: none
+}
+
+#comentarios-carousel {
+  position: absolute;
+  bottom: 0;
+
 }
 
 .box-branco {
-  /*width: 55%;*/
   height: auto;
   float: left;
   background: rgba(255,255,255,0.8);
-  margin-top: 23%;
+  margin-top: 30%;
   padding: 1em;
-  /*margin-left: 30px;*/
 }
 .box-branco h2 {
   font-family: 'textoFonte', sans-serif;
@@ -635,8 +643,9 @@ input[type="search"] {
 /*PORTFOLIO PAGE
 ------------------------------------------------------------------*/
 .section-heading {
-  min-height: 400px;
-  padding-top: 20%;
+  min-height: 300px;
+  padding-top: 15%;
+  margin-bottom: 15%;
 }
 .portfolio-area .section-heading h3 {
   color: #1f1f1f;
@@ -747,8 +756,6 @@ a.portfolio-item-zoom:hover {
 }
 
 
-
-
 /*area de testeminhos em portifolio*/
 .boxed{
   border: 2px solid #fff;
@@ -758,7 +765,7 @@ a.portfolio-item-zoom:hover {
   color: #fff;
   text-transform: uppercase;
   text-align: justify;
-  font-size: 0.95em;
+  font-size: 1.2em;
 }
 .testimonials-area {
   background-image: url(../img/bg_testemunhos.jpg);
@@ -791,7 +798,7 @@ a.portfolio-item-zoom:hover {
 }
 .testimonials-area .section-heading> p {
   display: inline-block;
-  font-size: 0.9em;
+  font-size: 1.2em;
   margin-bottom: 0;
 }
 .testimonial-details> p {
@@ -912,8 +919,8 @@ a.portfolio-item-zoom:hover {
 @media (max-width: 425px)
 {
   #navbar > ul {
-      margin-left: 10%!important;
-      margin-top: 0px!important;
+    margin-left: 10%!important;
+    margin-top: 0px!important;
   }
 }
 @media (max-width: 768px){
@@ -965,13 +972,9 @@ a.portfolio-item-zoom:hover {
   padding-bottom: 5%;
   max-width: 300px;
 }
-/*BANNER HOME*/
-.owl-item img{
-  width: 100%
-}
-.owl-theme .owl-controls {
-  margin-top: -30px;
-  text-align: center;
+
+#banner-home .owl-prev,#banner-home .owl-next{
+  display: none !important;
 }
 
 .navbar-header{
@@ -993,9 +996,6 @@ p{
   margin-bottom: 4%;
 }
 
-#slide_noel_box{
-  height: 500px
-}
 
 input[type="file"] {
   display: none;
@@ -1010,6 +1010,7 @@ input[type="file"] {
   font-family: 'tituloFonte', sans-serif;
   color: #FFF;
   text-align: center;
+  font-size: 2em;
 }
 
 .box {
@@ -1053,4 +1054,40 @@ input[type="file"] {
     width: 25%;
     padding-bottom: 25%;
   }
+}
+
+/*padrao bootrasp responsive*/
+@media (max-width: 767px) {
+  /*.visible-xs  */
+
+  #portifolio h2 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /*.visible-sm  */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /*.visible-md  */
+}
+
+@media (min-width: 1200px) {
+  /*.visible-lg  */
+  .box-branco {
+    margin-top: 50%;
+  }
+
+}
+@media (max-width: 767px) {
+  /*.hidden-xs  */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /*.hidden-sm  */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /*.hidden-md  */
+}
+@media (min-width: 1200px) {
+  /*hidden-lg */
 }
