@@ -62,7 +62,7 @@ $activePage = basename($_SERVER['PHP_SELF']);
             <ul class="nav navbar-nav text-center">
               <?php foreach($pages as $url=>$title):?>
                 <li <?php echo $url == $activePage ? 'class="active"':"" ?>>
-                  <a href="<?php echo $url;?>">
+                  <a href="<?php echo $url;?>" <?php echo $url == 'contato.php' ? 'class="contatoLink"':"" ?>>
                     <?php echo $title;?>
                   </a>
                 </li>

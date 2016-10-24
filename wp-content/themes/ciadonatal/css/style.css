@@ -26,8 +26,6 @@ body, html {
 h1,h2,h3,h4,h5{
   font-family: 'tituloFonte', sans-serif;
   color: #6d6e70;
-  text-transform: uppercase;
-
 }
 /*SCROLL BAR
 ----------------------------------------------------*/
@@ -142,13 +140,12 @@ h1,h2,h3,h4,h5{
 .navbar-top {
   top: 0 !important;
   transition: all 0.4s ease;
-  background-color: rgba(242, 242, 242, 0.7);
+  /*background-color: rgba(242, 242, 242, 0.7);*/
 }
 
 
-.navbar-natal {
+#navbar {
   background-color: rgba(242, 242, 242, 0.7);
-  border-color: transparent;
 }
 
 .navbar-natal .navbar-brand:hover,
@@ -187,7 +184,7 @@ h1,h2,h3,h4,h5{
   background-color: transparent;
 }
 .navbar-natal .navbar-toggle {
-  border-color: #333;
+  border-color: #881313;
 }
 .navbar-natal .navbar-toggle:hover,
 .navbar-natal .navbar-toggle:focus {
@@ -195,7 +192,7 @@ h1,h2,h3,h4,h5{
 
 }
 .navbar-natal .navbar-toggle .icon-bar {
-  background-color: #a88e5b;
+  background-color: #b30000;
 }
 .navbar-natal .navbar-collapse,
 .navbar-natal .navbar-form {
@@ -338,12 +335,12 @@ h1,h2,h3,h4,h5{
   background: transparent;
   width: 100%;
   min-height: 580px;
-  padding-top: 3%;
+  padding-top: 5%;
   padding-bottom: 3%;
 }
 .box-texto{
   /*width: 90%;*/
-  min-height: 400px;
+  min-height: 420px;
   border: 5px solid #6f7074;
   box-sizing: border-box;
   margin: 50px auto;
@@ -375,16 +372,16 @@ h1,h2,h3,h4,h5{
 }
 
 .moldura {
-  width: 320px;
-  height: 280px;
+  width: 280px;
+  height: 240px;
   border: 8px solid #8e2f39;
   margin-bottom: 10%;
 }
 .moldura img {
   margin-left: 4%;
   margin-top: 4%;
-  height: 280px;
-  width: 280px;
+  height: 240px;
+  width: 240px;
 }
 
 #portifolio h2 {
@@ -593,7 +590,7 @@ input[type="search"] {
 .logo-brand {
   position: absolute;
   top: -10px;
-  left: 60px;
+  left: 7%;
   width: 103px;
   height: 55px;
   background: #fff;
@@ -798,8 +795,9 @@ a.portfolio-item-zoom:hover {
 }
 .testimonials-area .section-heading> p {
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 0;
+  text-align: justify;
 }
 .testimonial-details> p {
   font-size: 18px;
@@ -830,32 +828,39 @@ a.portfolio-item-zoom:hover {
 
 /*MOLDURAS PORTIFOLIO*/
 .port-moldura-size1{
-  height: 400px;
-  width: 280px;
+  height: 470px;
+  width: 90%;
+}
+.port-moldura-size1 > .port-moldura-crop {
+  width: 100%;
 }
 
 .port-moldura-size1-big{
-  height: 450px;
-  width: 300px;
+  height: 600px;
+  width: 90%;
+}
+.port-moldura-size1-big > .port-moldura-crop {
+  width: 100%;
 }
 
 .port-moldura-size2{
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 90%;
+}
+.port-moldura-size2> .port-moldura-crop {
+  height: 110%;
+  width: 100%;
 }
 
 .port-moldura {
   border: 8px solid #8e2f39;
   box-sizing: border-box;
-  padding-top: 10px;
-  padding-right: 40px;
-  margin-top: 10%
-
+  padding-top: 12px;
 }
 
 .port-moldura-crop{
   /*border: 2px solid blue;*/
-  margin-left: -25px;
+  margin-left: -12px;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -882,9 +887,11 @@ a.portfolio-item-zoom:hover {
   margin-top: 5%;
   margin-bottom:  5%;
 }
-#quadros .row{
-  margin-rigt: 10%;
-  margin-left: 10%;
+.top-buffer{
+
+}
+.top-buffer1{
+  margin-top: 12%;
 }
 
 .portifa{
@@ -913,21 +920,7 @@ a.portfolio-item-zoom:hover {
   margin-top: 5%;
 }
 
-#navbar > ul{
-  margin-left: 20%!important;
-}
-@media (max-width: 425px)
-{
-  #navbar > ul {
-    margin-left: 10%!important;
-    margin-top: 0px!important;
-  }
-}
 @media (max-width: 768px){
-  #navbar > ul{
-    margin-left: 17%!important;
-    margin-top: 0px!important;
-  }
   .box-branco {
     margin-top: 18%;
     margin-bottom: 10%;
@@ -1027,6 +1020,15 @@ input[type="file"] {
 .innerContent img{
   width: 100%
 }
+
+.owl-controls{
+  z-index: 2;
+  position: inherit;
+  margin-top: -5%;
+  padding-bottom: 5%;
+}
+
+/*//responsivo*/
 @media only screen and (max-width : 480px) {
   /* Smartphone view: 1 tile */
   .box {
@@ -1059,17 +1061,85 @@ input[type="file"] {
 /*padrao bootrasp responsive*/
 @media (max-width: 767px) {
   /*.visible-xs  */
-
   #portifolio h2 {
     font-size: 1em;
   }
+
+  /*MOLDURAS PORTIFOLIO XS*/
+  .top-buffer {
+    margin-top: 17%;
+  }
+  .port-moldura-size1{
+    height: 141px;
+    width: 90%;
+  }
+  .port-moldura-size1 > .port-moldura-crop {
+    width: 100%;
+  }
+
+  .port-moldura-size1-big{
+    height: 180px;
+    width: 90%;
+  }
+  .port-moldura-size1-big > .port-moldura-crop {
+    width: 100%;
+  }
+
+  .port-moldura-size2{
+    height: 90px;
+    width: 90%;
+  }
+  .port-moldura-size2> .port-moldura-crop {
+    height: 110%;
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /*.visible-sm  */
+  .top-buffer{
+    margin-top: 39%;
+  }
+
+  /*MOLDURAS PORTIFOLIO SM*/
+  .top-buffer {
+    margin-top: 17%;
+  }
+
+  .port-moldura-size1{
+    height: 282px;
+    width: 90%;
+  }
+  .port-moldura-size1 > .port-moldura-crop {
+    width: 100%;
+  }
+
+  .port-moldura-size1-big{
+    height: 360px;
+    width: 90%;
+  }
+  .port-moldura-size1-big > .port-moldura-crop {
+    width: 100%;
+  }
+
+  .port-moldura-size2{
+    height: 180px;
+    width: 90%;
+  }
+  .port-moldura-size2> .port-moldura-crop {
+    height: 110%;
+    width: 100%;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   /*.visible-md  */
+  .top-buffer{
+    margin-top: 26%;
+  }
+  .top-buffer1{
+    margin-top: 12%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1077,17 +1147,93 @@ input[type="file"] {
   .box-branco {
     margin-top: 50%;
   }
+  .top-buffer{
+    margin-top: 18%;
+  }
 
 }
 @media (max-width: 767px) {
+
   /*.hidden-xs  */
+  .owl-controls {
+    z-index: 2;
+    position: inherit;
+    margin-top: -10%;
+    padding-bottom: 5%;
+  }
+
+  .navbar-natal {
+    background-color: rgba(242, 242, 242, 0.7);
+    border-color: transparent;
+  }
+
+  .navbar-natal .navbar-collapse,
+  .navbar-natal .navbar-form {
+    border-color: transparent;
+  }
+  .logo-brand {
+    left: 15%;
+  }
+
+  .port-moldura {
+    border: 4px solid #8e2f39;
+  }
+
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /*.hidden-sm  */
+  #navbar > ul{
+    margin-left: 17%!important;
+    margin-top: 0px!important;
+  }
+  .logo-brand {
+    left: 10%;
+  }
+
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   /*.hidden-md  */
+  #navbar > ul{
+    margin-left: 20%!important;
+  }
+  .logo-brand {
+    left: 8%;
+  }
+
+  /*MOLDURAS PORTIFOLIO MD*/
+  .top-buffer {
+    margin-top: 17%;
+  }
+  .port-moldura-size1{
+    height: 376px;
+    width: 90%;
+  }
+  .port-moldura-size1 > .port-moldura-crop {
+    width: 100%;
+  }
+
+  .port-moldura-size1-big{
+    height: 480px;
+    width: 90%;
+  }
+  .port-moldura-size1-big > .port-moldura-crop {
+    width: 100%;
+  }
+
+  .port-moldura-size2{
+    height: 240px;
+    width: 90%;
+  }
+  .port-moldura-size2> .port-moldura-crop {
+    height: 110%;
+    width: 100%;
+  }
+
 }
 @media (min-width: 1200px) {
   /*hidden-lg */
+  #navbar > ul{
+    margin-left: 25%!important;
+    margin-top: 0px!important;
+  }
 }

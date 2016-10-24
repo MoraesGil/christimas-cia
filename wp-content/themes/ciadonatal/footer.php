@@ -25,10 +25,10 @@
             <br><br>
           </form>
         </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-6 link_contato ">
-              <a href="contato.html"><img class="img-responsive center-block" src="img/icone_RH.png" alt=""></a>
+              <a href="contato.php"><img class="img-responsive center-block" src="img/icone_RH.png" alt=""></a>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 link_contato">
               <a href="mailto:fabiano@ciadonatal.com.br"><img class="img-responsive" src="img/icone_comercial.png" alt=""></a>
@@ -104,8 +104,5 @@ $(document).ready(function() {
 });
 </script>
 
-
 </body>
-
-
 </html>

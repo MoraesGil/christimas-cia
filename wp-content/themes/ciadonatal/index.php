@@ -7,6 +7,7 @@
   <div><img src="img/banner.jpg"></div>
 </div>
 
+<div class="clearfix"></div>
 <section id="empresa">
   <div class="empresa">
     <div class="container">
@@ -102,8 +103,8 @@
         </div>
       </div>
 
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <h2>Nosso Diferencial: Projetos EXCLUSIVOS, ricos em detalhes e acabamento artesanal.</h2>
+      <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+        <h4>Nosso Diferencial: Projetos EXCLUSIVOS, ricos em detalhes e acabamento artesanal.</h4>
         <br>
         <button id="btn_portifolio_mais" class="button invert-red center-block" type="button">VEJA MAIS</button>
       </div>

@@ -3,7 +3,7 @@
   <img class="img-responsive" src="img/banner_fixo.jpg" alt="">
 </section>
 
-<section id="sec_trabalhe">
+<section id="sec_trabalhe" class="">
   <div class="container">
     <h2 class="text-center">TRABALHE CONOSCO</h2>
     <div class="separador"></div>

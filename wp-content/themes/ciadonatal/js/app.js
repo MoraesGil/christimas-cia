@@ -22,7 +22,6 @@ $(window).ready(function(){
     responsiveClass:true,
     items:1,
     nav: true,
-    navText: false
   });
 
   $("#comentarios-carousel").owlCarousel({
@@ -34,8 +33,6 @@ $(window).ready(function(){
     animateOut: 'fadeOut',
     smartSpeed:3000,
   });
-
-
 
 
   $("#btn_empresa_mais").click(function(){
@@ -52,6 +49,15 @@ $(window).ready(function(){
     numeratio: true,
     infinigall: true
   });
+
+  $('.contatoLink').click(function () {
+    $('html, body').animate({
+        // scrollTop: $(document).height()
+        scrollTop: $("#contato").offset().top
+    }, 'slow');
+    return false;
+});
+
 
   // testimonial-item
   // $(".testimonial-item").owlCarousel({

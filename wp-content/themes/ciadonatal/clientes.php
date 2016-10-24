@@ -7,16 +7,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="text-center">Confira aqui quem são os nossos clientes.</h3>
+          <h3 class="text-center">CONFIRA AQUI QUEM SÃO NOSSOS CLIENTES</h3>
         </div>
-
-        <div class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-          <p style="line-height:1em;font-family: 'tituloFonte', sans-serif;">
-            Empresas que vem durante estes 20 anos, nos privilegiando com sua confiança e parceria. <br>
-            Queremos que você, também faça parte do rol de nossos clientes.
-          </p>
-        </div>
-
+        <p>
+          Empresas que vem durante estes 20 anos, nos privilegiando com sua confiança e parceria. <br>
+          Queremos que você, também faça parte do rol de nossos clientes.
+        </p>
       </div>
       <br>
       <br>
