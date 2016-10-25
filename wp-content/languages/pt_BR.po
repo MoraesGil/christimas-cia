@@ -1,14 +1,15 @@
-# Translation of 4.6.x in Portuguese (Brazil)
-# This file is distributed under the same license as the 4.6.x package.
+# Translation of WordPress - 4.6.x in Portuguese (Brazil)
+# This file is distributed under the same license as the WordPress - 4.6.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-08-10 15:46:12+0000\n"
+"PO-Revision-Date: 2016-10-21 02:17:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
-"Project-Id-Version: 4.6.x\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: pt_BR\n"
+"Project-Id-Version: WordPress - 4.6.x\n"
 
 #. translators: Translate this to the correct language tag for your locale, see
 #. https://www.w3.org/International/articles/language-tags/ for reference. Do
@@ -690,10 +691,6 @@ msgstr "Entrar no modo de pré-visualização para desktop"
 msgid "Enter tablet preview mode"
 msgstr "Entrar no modo de pré-visualização para tablet"
 
-#: wp-includes/class-wp-customize-manager.php:1946
-msgid "Enter mobile preview mode"
-msgstr "Entrar no modo de pré-visualização para celular"
-
 #: wp-comments-post.php:24
 msgid "Comment Submission Failure"
 msgstr "Falha ao submeter o comentário"
@@ -702,6 +699,10 @@ msgstr "Falha ao submeter o comentário"
 #: wp-includes/customize/class-wp-customize-selective-refresh.php:186
 msgid "Shift-click to edit this element."
 msgstr "Segure Shift e clique para editar este elemento."
+
+#: wp-includes/class-wp-customize-manager.php:1946
+msgid "Enter mobile preview mode"
+msgstr "Entrar no modo de pré-visualização para dispositivo móvel"
 
 #: wp-includes/user.php:2266
 msgid "<strong>ERROR</strong>: Sorry, that username is not allowed."
@@ -5353,7 +5354,7 @@ msgstr "Autor"
 msgid "Destination directory for file streaming does not exist or is not writable."
 msgstr "Diretório de destino para o arquivo de streaming não existe ou não é gravável."
 
-#: wp-includes/class-http.php:535
+#: wp-includes/class-http.php:533
 msgid "There are no HTTP transports available which can complete the requested request."
 msgstr "Não há  transportes HTTP disponíveis para completar o pedido solicitado."
 
@@ -6685,7 +6686,7 @@ msgstr "Próximo &raquo;"
 msgid "User has blocked requests through HTTP."
 msgstr "O usuário bloqueou solicitações através de HTTP."
 
-#: wp-includes/class-http.php:966 wp-includes/class-wp-http-curl.php:232
+#: wp-includes/class-http.php:964 wp-includes/class-wp-http-curl.php:232
 #: wp-includes/class-wp-http-curl.php:271
 msgid "Too many redirects."
 msgstr "Redirecionamentos em excesso."

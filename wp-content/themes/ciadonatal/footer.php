@@ -1,7 +1,7 @@
 <!-- footer -->
 <div class="clearfix"></div>
 <section id="contato">
-  <div class="mapa" data-parallax="scroll" data-bleed="10" data-image-src="img/banner_mapa.jpg" data-natural-width="1920" data-natural-height="920">
+  <div class="mapa" data-parallax="scroll" data-bleed="10" data-image-src="<?php bloginfo('template_directory');?>/img/banner_mapa.jpg" data-natural-width="1920" data-natural-height="920">
     <div class="container">
       <div class="row">
         <h2>Contato</h2>
@@ -28,10 +28,10 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-6 link_contato ">
-              <a href="contato.php"><img class="img-responsive center-block" src="img/icone_RH.png" alt=""></a>
+              <a href="/contato/"><img class="img-responsive center-block" src="<?php bloginfo('template_directory');?>/img/icone_RH.png" alt=""></a>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 link_contato">
-              <a href="mailto:fabiano@ciadonatal.com.br"><img class="img-responsive" src="img/icone_comercial.png" alt=""></a>
+              <a href="mailto:fabiano@ciadonatal.com.br"><img class="img-responsive" src="<?php bloginfo('template_directory');?>/img/icone_comercial.png" alt=""></a>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
               <p>
@@ -61,6 +61,7 @@
   </div>
 </section>
 
+<?php wp_footer(); ?>
 <footer>
   <div class="footer">
     <div class="col-md-12 text-center">
@@ -71,13 +72,13 @@
 
 <!--JAVASCRIPT-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/venobox.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+<script src="<?php bloginfo('template_directory');?>/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory');?>/js/venobox.min.js"></script>
+<script src="<?php bloginfo('template_directory');?>/js/owl.carousel.min.js"></script>
 
-<script src="js/parallax.js" type="text/javascript"></script>
-<script src="js/wow.js" type="text/javascript"></script>
-<script src="js/app.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory');?>/js/parallax.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory');?>/js/wow.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory');?>/js/app.js" type="text/javascript"></script>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {

@@ -1,10 +1,10 @@
-<?php include_once "header.php"; ?>
+<?php get_header(); ?>
 
 <!-- carousel -->
 <div id="banner-home" class="owl-carousel owl-theme">
-  <div><img src="img/banner.jpg"></div>
-  <div><img src="img/banner.jpg"></div>
-  <div><img src="img/banner.jpg"></div>
+  <div><img src="<?php bloginfo('template_directory');?>/img/banner.jpg"></div>
+  <div><img src="<?php bloginfo('template_directory');?>/img/banner.jpg"></div>
+  <div><img src="<?php bloginfo('template_directory');?>/img/banner.jpg"></div>
 </div>
 
 <div class="clearfix"></div>
@@ -23,7 +23,7 @@
         </div>
         <div class="col-md-6 col-sm-6 hidden-xs">
           <div class="foto pull-right">
-            <img src="img/img1.jpg" alt="">
+            <img src="<?php bloginfo('template_directory');?>/img/img1.jpg" alt="">
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@
 </section>
 
 <section id="clientes">
-  <div class="clientes" data-parallax="scroll" data-bleed="10" data-image-src="img/banner_clientes.jpg" data-natural-width="1920" data-natural-height="920">
+  <div class="clientes" data-parallax="scroll" data-bleed="10" data-image-src="<?php bloginfo('template_directory');?>/img/banner_clientes.jpg" data-natural-width="1920" data-natural-height="920">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -51,7 +51,7 @@
 </section>
 
 <section id="projetos">
-  <div class="projetos" data-parallax="scroll" data-bleed="10" data-image-src="img/banner_portfolio.jpg" data-natural-width="1920" data-natural-height="920">
+  <div class="projetos" data-parallax="scroll" data-bleed="10" data-image-src="<?php bloginfo('template_directory');?>/img/banner_portfolio.jpg" data-natural-width="1920" data-natural-height="920">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -89,17 +89,17 @@
     <div class="row">
       <div class=" col-md-4  col-sm-6 col-xs-12">
         <div class="center-block moldura">
-          <img src="img/port1.jpg" alt="">
+          <img src="<?php bloginfo('template_directory');?>/img/port1.jpg" alt="">
         </div>
       </div>
       <div class=" col-md-4  col-sm-6 hidden-xs">
         <div class="center-block moldura">
-          <img src="img/port2.jpg" alt="">
+          <img src="<?php bloginfo('template_directory');?>/img/port2.jpg" alt="">
         </div>
       </div>
       <div class=" col-md-4  col-sm-4 hidden-sm hidden-xs">
         <div class="center-block moldura">
-          <img src="img/port3.jpg" alt="">
+          <img src="<?php bloginfo('template_directory');?>/img/port3.jpg" alt="">
         </div>
       </div>
 
@@ -119,7 +119,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 hidden-sm hidden-xs">
-          <img src="img/comentarios/1.png" alt="" />
+          <img src="<?php bloginfo('template_directory');?>/img/comentarios/1.png" alt="" />
         </div>
         <div class="col-md-6">
           <div class="box-branco">
@@ -135,7 +135,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 hidden-sm hidden-xs">
-          <img src="img/comentarios/2.png" alt="" />
+          <img src="<?php bloginfo('template_directory');?>/img/comentarios/2.png" alt="" />
         </div>
         <div class="col-md-6">
           <div class="box-branco">
@@ -152,4 +152,4 @@
   </div>
 </section>
 
-<?php include_once "footer.php"; ?>
+<?php get_footer(); ?>

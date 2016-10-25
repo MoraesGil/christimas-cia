@@ -1,47 +1,37 @@
-<?php
-$pages = array();
-$pages["index.php"] = "Home";
-$pages["empresa.php"] = "Empresa";
-$pages["portifolio.php"] = "Portfólio";
-$pages["projetos.php"] = "Projetos";
-$pages["clientes.php"] = "Clientes";
-$pages["contato.php"] = "Contato";
-
-$activePage = basename($_SERVER['PHP_SELF']);
-
-?>
-
 <!DOCTYPE html>
 <html lang="">
 <head>
   <meta charset="UTF-8">
   <title>CIA DO NATAL</title>
 
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/animate.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title">
 
   <!-- Important Owl stylesheet -->
-  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/owl.carousel.css">
 
   <!-- Default Theme -->
-  <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/owl.theme.css">
 
   <!--animate css-->
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/animate.css">
   <!--venobox css-->
-  <link rel="stylesheet" href="css/venobox.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/venobox.css">
 
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--JAVASCRIPT-->
-  <script src="js/modernizr.js" type="text/javascript"></script>
+  <script src="<?php bloginfo('template_directory');?>/js/modernizr.js" type="text/javascript"></script>
   <!-- FONTES -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i" rel="stylesheet">
+<?php wp_head(); ?>
 </head>
+
 <body>
   <!--MENU-->
   <div class="navbar-wrapper">
@@ -59,15 +49,19 @@ $activePage = basename($_SERVER['PHP_SELF']);
             </a>
           </div>
           <div id="navbar" class=" navbar-natal navbar-collapse collapse">
-            <ul class="nav navbar-nav text-center">
-              <?php foreach($pages as $url=>$title):?>
-                <li <?php echo $url == $activePage ? 'class="active"':"" ?>>
-                  <a href="<?php echo $url;?>" <?php echo $url == 'contato.php' ? 'class="contatoLink"':"" ?>>
-                    <?php echo $title;?>
-                  </a>
-                </li>
-              <?php endforeach;?>
-            </ul>
+            <?php
+                     wp_nav_menu( array(
+                           'menu'              => 'menu',
+                           'theme_location'    => 'menu',
+                           'depth'             => 2,
+                           'container'         => 'div',
+                           'container_class'   => 'collapse navbar-collapse',
+                           'container_id'      => 'navbar',
+                           'menu_class'        => 'nav navbar-nav',
+                           'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                           'walker'            => new wp_bootstrap_navwalker())
+                       );
+                     ?>
           </div>
         </div>
       </nav>

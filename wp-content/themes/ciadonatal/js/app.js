@@ -50,7 +50,7 @@ $(window).ready(function(){
     infinigall: true
   });
 
-  $('.contatoLink').click(function () {
+  $('#menu-item-24 > a').click(function () {
     $('html, body').animate({
         // scrollTop: $(document).height()
         scrollTop: $("#contato").offset().top
