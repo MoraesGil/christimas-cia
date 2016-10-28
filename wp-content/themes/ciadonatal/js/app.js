@@ -15,6 +15,9 @@ function changeMenu(){
 $(window).ready(function(){
   changeMenu();
 
+  //adaptacao técnica para adcionar classe no formulario wordpress
+  $("#submit_cv").addClass('button invert invert-black');
+
   $("#banner-home").owlCarousel({
     loop:true,
     autoplay:true,
@@ -52,11 +55,11 @@ $(window).ready(function(){
 
   $('#menu-item-24 > a').click(function () {
     $('html, body').animate({
-        // scrollTop: $(document).height()
-        scrollTop: $("#contato").offset().top
+      // scrollTop: $(document).height()
+      scrollTop: $("#contato").offset().top
     }, 'slow');
     return false;
-});
+  });
 
 
   // testimonial-item

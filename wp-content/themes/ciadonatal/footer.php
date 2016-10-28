@@ -10,20 +10,15 @@
       <br><br>
       <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <form>
-            <div class="form-group ">
-              <input type="email" class="form-controller" name="nome" placeholder="Nome">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-controller" name="email" placeholder="E-mail">
-            </div>
 
-            <div class="form-group">
-              <textarea rows="5" placeholder="Mensagem" id="" class="form-controller"></textarea>
-            </div>
-            <input type="submit" value="Enviar" name="envia" class="button invert">
-            <br><br>
-          </form>
+            <?php
+            query_posts('page_id=28');
+            while(have_posts()):
+              the_post();
+              ?>
+              <?php the_content(); ?>
+            <?php endwhile; ?>
+
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="row">

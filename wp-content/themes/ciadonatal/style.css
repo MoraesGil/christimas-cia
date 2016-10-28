@@ -59,6 +59,53 @@ h1,h2,h3,h4,h5{
 }
 /*BOTÃO
 ------------------------------------------------------*/
+
+#submit_cv{
+  /*display: inline-block;*/
+  padding: 10px 40px;
+  margin-bottom: 0;
+  font-family:'textoFonte', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.wpcf7-submit{
+  /*display: inline-block;*/
+  padding: 10px 40px;
+  margin-bottom: 0;
+  font-family:'textoFonte', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
 .button {
   /*display: inline-block;*/
   padding: 10px 40px;
@@ -1012,6 +1059,9 @@ input[type="file"] {
   display: inline-block;
   cursor: pointer;
   margin-bottom: 5%;
+}
+.custom-file-upload > br{
+  display: none;
 }
 #experiencias h4,h5{
   font-family: 'tituloFonte', sans-serif;
