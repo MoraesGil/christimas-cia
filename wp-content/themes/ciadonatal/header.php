@@ -29,7 +29,7 @@
   <script src="<?php bloginfo('template_directory');?>/js/modernizr.js" type="text/javascript"></script>
   <!-- FONTES -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i" rel="stylesheet">
-<?php wp_head(); ?>
+  <?php wp_head(); ?>
 </head>
 
 <body>
@@ -49,19 +49,31 @@
             </a>
           </div>
           <div id="navbar" class=" navbar-natal navbar-collapse collapse">
-            <?php
-                     wp_nav_menu( array(
-                           'menu'              => 'menu',
-                           'theme_location'    => 'menu',
-                           'depth'             => 2,
-                           'container'         => 'div',
-                           'container_class'   => 'collapse navbar-collapse',
-                           'container_id'      => 'navbar',
-                           'menu_class'        => 'nav navbar-nav',
-                           'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                           'walker'            => new wp_bootstrap_navwalker())
-                       );
-                     ?>
+            <ul class="nav navbar-nav text-center">
+
+              <?php
+              $pages = array();
+              $pages["/"] = "Home";
+              $pages["empresa/"] = "Empresa";
+              $pages["portfolio/"] = "Portfólio";
+              $pages["projetos/"] = "Projetos";
+              $pages["clientes/"] = "Clientes";
+              $pages["contato/"] = "Contato";
+
+              $activePage = basename($_SERVER['PHP_SELF']);
+
+              ?>
+
+
+              <?php foreach($pages as $url=>$title):?>
+                <li <?php echo $url == $activePage ? 'class="active"':"" ?>>
+                  <a href="<?php echo $url;?>" <?php echo $url == 'contato.php' ? 'class="contatoLink"':"" ?>>
+                    <?php echo $title;?>
+                  </a>
+                </li>
+              <?php endforeach;?>
+            </ul>
+
           </div>
         </div>
       </nav>

@@ -56,7 +56,6 @@
   </div>
 </section>
 
-<?php wp_footer(); ?>
 <footer>
   <div class="footer">
     <div class="col-md-12 text-center">
@@ -64,6 +63,8 @@
     </div>
   </div>
 </footer>
+
+<?php wp_footer(); ?>
 
 <!--JAVASCRIPT-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>

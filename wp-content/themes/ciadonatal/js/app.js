@@ -27,6 +27,7 @@ $(window).ready(function(){
     nav: true,
   });
 
+
   $("#comentarios-carousel").owlCarousel({
     loop:true,
     autoplay:true,
@@ -39,13 +40,13 @@ $(window).ready(function(){
 
 
   $("#btn_empresa_mais").click(function(){
-    window.location = "/empresa.html"
+    window.location = "/empresa/"
   });
   $("#btn_clientes_mais").click(function(){
-    window.location = "/clientes.html"
+    window.location = "/clientes/"
   });
   $("#btn_portifolio_mais").click(function(){
-    window.location = "/portifolio.html"
+    window.location = "/portfolio/"
   });
 
   $('.venobox').venobox({

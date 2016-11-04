@@ -540,8 +540,6 @@ h1,h2,h3,h4,h5{
   text-align: justify;
 }
 
-
-
 /*Formularios e botões*/
 .form-controller {
   display: block;
@@ -610,40 +608,7 @@ input[type="search"] {
   width: 50px;
   height: 50px;
 }
-/*FOOTER
------------------------------------------------------*/
-.footer {
-  position: relative;
-  height: 50px;
-  width: 100%;
-  background: #fff;
-  font-family: 'textoFonte', sans-serif;
-  font-size: 18px;
-  color: #8e2f39;
-}
-.footer div{
-  margin-top: 15px;
-}
 
-
-.fa {
-  color: #8e2f39;
-  font-size: 32px !important;
-  text-align: right;
-  /*margin-left: 240px;*/
-}
-.footer a {
-  color: #8e2f39;
-  font-family: 'textoFonte', sans-serif;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  text-align: right;
-  margin-left: 50px;
-}
-.footer a:hover {
-  color: #8e2f39;
-  text-decoration: underline;
-}
 
 /*LOGO
 -----------------------------------------------------------------*/
@@ -1090,6 +1055,41 @@ input[type="file"] {
   position: inherit;
   margin-top: -5%;
   padding-bottom: 5%;
+}
+
+/*FOOTER
+-----------------------------------------------------*/
+.footer {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background: #fff;
+  font-family: 'textoFonte', sans-serif;
+  font-size: 18px;
+  color: #8e2f39 !important;
+}
+.footer div{
+  margin-top: 15px;
+}
+
+
+.fa {
+  color: #8e2f39;
+  font-size: 32px !important;
+  text-align: right;
+  /*margin-left: 240px;*/
+}
+.footer a {
+  color: #8e2f39;
+  font-family: 'textoFonte', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: right;
+  margin-left: 50px;
+}
+.footer a:hover {
+  color: #8e2f39;
+  text-decoration: underline;
 }
 
 /*//responsivo*/
