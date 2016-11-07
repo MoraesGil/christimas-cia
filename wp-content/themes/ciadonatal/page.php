@@ -39,7 +39,13 @@
               <?php echo $post->post_title; ?>
             </h4>
             <br>
-            <?php echo $post->post_content; ?>
+            <div class="text-justify">
+              <?php echo $post->post_content; ?>
+            </div>
+            <div class="portifa-span pull-right" style="width: 240px; text-align: right;">
+              <?php echo get_post_meta($post->ID,'texto_destacado',true); ?>
+            </div>
+
           <?php endif; ?>
         </div>
       </div>
@@ -48,25 +54,33 @@
 
   <section id="portfolio">
     <div class="container-portifa">
-      <?php $post = get_post(155);    if ($post): ?>
-        <?php foreach(get_post_gallery_images($post->ID) as $index=>$image):  ?>
+      <?php
+      // ref http://wordpress.stackexchange.com/questions/96026/nextgen-gallery-how-to-get-picture-url-by-gallery-id
+      // ref http://stackoverflow.com/questions/21645929/show-all-images-of-nextgen-gallery-from-multiple-gallery-id
+      global $nggdb;
 
-          <div class="portfolio-masonry-item box <?php echo $index>4 ? "hidden-xs":"" ?>">
-            <div class="innerContent">
-              <img style="object-fit: cover;" src="<?php echo  $image;?>" alt="">
-            </div>
-            <div class="portfolio-overley venobox " data-gall="galeria" href="<?php echo  $image;?>">
-              <a class="portfolio-item-zoom" >
-                <i class="fa fa-search"></i>
-                <div class="content">
-                  <h4><a href="">Titulo</a></h4>
-                  <span>subtitulo</span>
-                </div>
-              </a>
-            </div>
+      $get_gall_id = 1;
+      // $gall_ids = $nggdb->get_ids_from_gallery($get_gall_id);
+      $images = $nggdb->get_gallery($get_gall_id);
+
+      ?>
+      <?php foreach($images as $index=>$gall_id):  ?>
+
+        <div class="portfolio-masonry-item box <?php echo $index>3 ? "hidden-xs":"" ?>">
+          <div class="innerContent">
+            <img class="img-responsive" src="<?php echo  $images[$index]->thumbURL;?>" alt="">
           </div>
-        <?php endforeach; ?>
-      <?php endif; ?>
+          <div class="portfolio-overley venobox " data-gall="galeria" href="<?php echo  $images[$index]->imageURL;?>">
+            <a class="portfolio-item-zoom" >
+              <i class="fa fa-search"></i>
+              <div class="content">
+                <h4><a href=""><?php echo  $images[$index]->alttext;?></a></h4>
+                <span><?php echo  $images[$index]->description;?></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      <?php endforeach; ?>
 
     </div>
   </section>
@@ -84,6 +98,9 @@
                 <div class="separador" style="background: #ffffff;"></div>
                 <br>
                 <?php echo $post->post_content; ?>
+                <div class="boxed">
+                  <?php echo get_post_meta($post->ID,'texto_destacado',true); ?>
+                </div>
               </div>
             <?php endif; ?>
           </div>
@@ -95,16 +112,22 @@
   <section id="quadros" class="hidden-xs">
     <div class="container ">
       <div class="row">
+
+        <?php
+        $get_gall_id = 2;
+        $images = $nggdb->get_gallery($get_gall_id);
+        ?>
+
         <div class="col-xs-4 col-xs-offset-2 col-md-4 col-md-offset-2">
           <div class="port-moldura port-moldura-size1  ">
             <div class="port-moldura-crop  ">
-              <img class="img-responsive"  src="<?php bloginfo('template_directory'); ?>/img/quadros/1.jpg" alt="">
+              <img class="img-responsive venobox" data-gall="galeria" src="<?php echo $images[0]->imageURL ?>" href="<?php echo  $images[0]->imageURL;?>" alt="">
             </div>
           </div>
 
           <div class="port-moldura port-moldura-size1 top-buffer1  ">
             <div class="port-moldura-crop  ">
-              <img class="img-responsive"  src="<?php bloginfo('template_directory'); ?>/img/quadros/2.jpg" alt="">
+              <img class="img-responsive  venobox" data-gall="galeria" src="<?php echo $images[1]->imageURL ?>" href="<?php echo  $images[1]->imageURL;?>" alt="">
             </div>
           </div>
         </div>
@@ -112,13 +135,13 @@
         <div class="col-xs-5 col-md-5">
           <div class="port-moldura port-moldura-size1-big   ">
             <div class="port-moldura-crop">
-              <img class="img-responsive"  src="<?php bloginfo('template_directory'); ?>/img/quadros/2.jpg" alt="">
+              <img class="img-responsive venobox"  data-gall="galeria"  src="<?php echo $images[2]->imageURL ?>" href="<?php echo  $images[2]->imageURL;?>" alt="">
             </div>
           </div>
 
           <div class="port-moldura port-moldura-size2 top-buffer  ">
             <div class="port-moldura-crop  ">
-              <img class="img-responsive"  src="<?php bloginfo('template_directory'); ?>/img/quadros/2.jpg" alt="">
+              <img class="img-responsive venobox"  data-gall="galeria"  src="<?php echo $images[3]->imageURL ?>" href="<?php echo  $images[3]->imageURL;?>" alt="">
             </div>
           </div>
         </div>

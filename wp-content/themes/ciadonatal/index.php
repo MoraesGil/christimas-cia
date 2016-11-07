@@ -92,7 +92,7 @@ if ($post): ?>
   <div class="container">
     <div class="row">
       <?php
-      $post = get_post(183);
+      $post = get_post(68);
       if ($post): ?>
 
       <?php   $images = get_post_gallery_images($post->ID); ?>

@@ -1044,6 +1044,7 @@ input[type="file"] {
 }
 .innerContent {
   position: absolute;
+  width: 100%;
 
 }
 .innerContent img{
@@ -1295,6 +1296,7 @@ input[type="file"] {
 
 }
 @media (min-width: 1200px) {
+
   /*hidden-lg */
   #navbar > ul{
     margin-left: 25%!important;
